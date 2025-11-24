@@ -1,30 +1,30 @@
-# **Engeto_projekt_3: Elections scraper**
+# **Engeto_project_3: Elections Scraper**
 
-## Popis projektu:
-Tento skript slouží pro získání a ukládání dat o výsledcích voleb do poslanecké sněmovny Parlamentu České republiky z roku 2017. Program přijímá jako vstup URL adresu konkrétní obce a generuje CSV soubor, který uvádí číslo obce, název obce, počet voličů, počet vydaných obálek, počet platných hlasů a výsledky jednotlivých stran včetně počtu hlasů pro každou stranu. Odkaz na výsledky voleb je: https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ
+## Project Description:
+This script is used to retrieve and store data on the results of the 2017 elections to the Chamber of Deputies of the Parliament of the Czech Republic. The program takes as input the URL of a specific municipality and generates a CSV file containing the municipality number, municipality name, number of voters, number of envelopes issued, number of valid votes, and the results for each party, including the number of votes for each party. Election results can be found here: https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ
 
-## Instalace knihoven:
-V kódu jsou použity knihovny **requests** a **BeautifulSoup**. Requests slouží pro stahování webových stránek a BeautifulSoup pro parsování HTML obsahu. Knihovny je vhodné nainstalovat do virtuálního prostředí.
+## Library Installation:
+The script uses the **requests** and **BeautifulSoup** libraries. Requests is used for downloading web pages. BeautifulSoup is used for parsing HTML content. It is recommended to install these libraries in a virtual environment.
 
-Tyto knihovny lze nainstalovat ze souboru **requirements.txt** pomocí příkazu: **pip3 install -r requirements.txt**
+You can install the required libraries from requirements.txt using the command: **pip3 install -r requirements.txt**
 
-## Spuštění programu:
-Spustíte skript **main.py** a v příkazovém řádku zadáte **python main.py** a **dva povinné argumenty** vložené do uvozovek.
+## Running the Program:
+Run the script **main.py** using the command line with **python main.py** and provide two required arguments in quotation marks **dva povinné argumenty**.
 
-První argument je webová adresa, kde jsou dostupná volební data pro konkrétní obec.<br>
-Druhý argument je Vámi zvolené jméno souboru.csv, do kterého budou data uložena.
+The first argument is the web address where the election data for a specific municipality is available obec.<br>
+The second argument is the CSV file name of your choice (file_name.csv), where the data will be saved.
 
-### Příklad spuštění:
-První argument: https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumnuts=8102<br>
-Druhý argument: vysledky_voleb_Frydek_Mistek.csv
+### Example Run:
+The first argument: https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumnuts=8102<br>
+The second argument: vysledky_voleb_Frydek_Mistek.csv
 
-Vzorový příklad: **python main.py** "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumnuts=8102" **"vysledky_voleb_Frydek_Mistek.csv"**
+Sample example: **python main.py** "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumnuts=8102" **"vysledky_voleb_Frydek_Mistek.csv"**
 
-## Průběh stahování:
+## Download Process:
 Loading data...<br>
 The data has been successfully exported to the file: vysledky_voleb_frydek_mistek.csv
 
-## Částečný výstup:
+## Partial Output:
 Code;Location;Registered;Envelopes;Valid;Občanská demokratická strana;Řád národa - Vlastenecká unie;CESTA ODPOVĚDNÉ SPOLEČNOSTI;Česká str.sociálně demokrat.;Radostné Česko;STAROSTOVÉ A NEZÁVISLÍ;Komunistická str.Čech a Moravy;Strana zelených;ROZUMNÍ-stop migraci,diktát.EU;Strana svobodných občanů;Blok proti islam.-Obran.domova;Občanská demokratická aliance;Česká pirátská strana;Česká národní fronta;Referendum o Evropské unii;TOP 09;ANO 2011;Dobrá volba 2016;SPR-Republ.str.Čsl. M.Sládka;Křesť.demokr.unie-Čs.str.lid.;Česká strana národně sociální;REALISTÉ;SPORTOVCI;Dělnic.str.sociální spravedl.;Svob.a př.dem.-T.Okamura (SPD);Strana Práv Občanů
 598011;Baška;3093;2065;2053;175;1;1;124;1;49;192;21;12;21;1;0;216;0;0;44;665;2;9;194;1;16;7;3;293;5
 598020;Bílá;285;178;178;19;0;0;14;0;10;21;3;1;0;1;0;12;1;0;3;52;0;0;15;0;3;0;0;23;0

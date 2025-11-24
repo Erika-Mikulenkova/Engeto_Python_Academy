@@ -9,7 +9,7 @@ The script uses the **requests** and **BeautifulSoup** libraries. Requests is us
 You can install the required libraries from requirements.txt using the command: **pip3 install -r requirements.txt**
 
 ## Running the Program:
-Run the script **main.py** using the command line with **python main.py** and provide two required arguments in quotation marks **dva povinné argumenty**.
+Run the script **main.py** using the command line with **python main.py** and provide two required arguments in quotation marks **two required arguments**.
 
 The first argument is the web address where the election data for a specific municipality is available obec.<br>
 The second argument is the CSV file name of your choice (file_name.csv), where the data will be saved.
